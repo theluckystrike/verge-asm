@@ -51,7 +51,7 @@ defaults:
 jobs:
   # Build + gates. Runs on every trigger (PRs included). Every step here is blocking — a
   # non-zero exit fails the job — except the advisory `astro check` step, which carries
-  # continue-on-error (#1569). The job is not among the 7 required status checks in the
+  # continue-on-error (#1569). The job is not a required status check on the
   # `main` ruleset, so a red run does not block a merge (#1395).
   build:
     runs-on: ubuntu-latest
